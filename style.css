@@ -1,0 +1,99 @@
+/* configuração inicial */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+body {
+    background-image: url(pexels-orhan-namli-2158307973-36557602.jpg);
+    background-size: cover;        /* preenche todo espaço */
+    background-position: center;   /* centraliza imagem */
+    height: 100vh;                 /* altura tela */
+
+    /*deixa caixa no centro*/
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.caixaApp {
+background-color: rgb(33, 31, 29); /*modificar*/
+width:450px ;/*modificar*/
+padding:35px; /*modificar*/
+border-radius: 25px;
+box-shadow: 0 0 35px rgba(0, 0, 0, 0.8);
+
+}
+.texto{
+    width:100%;
+    height: 100px;
+    border:none;
+    outline: none;/* borda quando clica*/
+    background-color: #ffffff1a; /*modificar*/
+    color:#ffffff99;/*cor do texto - modificar*/
+    padding:15px;/*modificar - espaço interno*/
+}
+
+
+.tradução {
+    padding: 15px;
+    background-color: #ffffff1a;
+
+}
+.traducao {
+    font-size: 18px;/*modificar */
+    color: #ffffff99;
+    /*modificar*/
+   overflow-wrap: break-word; /* quebra palavra longa */
+    word-wrap: break-word;     /* compatibilidade antiga */
+}
+.titulo-traducao {
+    color: #ffffff99;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+/* estilizando parte dos botôes*/
+
+.caixa-interna {
+    display: flex;
+    align-items: center;/* centraliza verticalmente*/
+    gap: 10px;  /*espaço entre os botôes*/
+    margin: 20px auto;
+}
+
+.idioma {
+    width: 100%;
+    border: none;
+    padding: 10px;/*mudar a gosto*/
+    background-color: #ffffff1a;
+    color:#ffffff99;/*mudar*/
+    /*modificar*/
+    border-radius: 20px;
+    outline: none;
+    /*tira as bordas*/
+    cursor: pointer; /* mão do mause*/
+}
+
+button {
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #ffffff1a;
+    cursor: pointer;
+    color: rgb(249, 249, 255); /*mudar*/
+}
+/*efeito ao passar o mause*/
+button:hover{
+    opacity: 0.9;
+}
+
+
+/* para nao ficar branco quando clica nos idiomas */
+.idioma option {
+    background-color: rgb(58, 55, 55);/*mudar*/
+    color: rgb(230, 230, 234);/*mudar*/
+}
